@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="svg.css">
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	 	<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+		<script src="modernizr-2.6.2.min.js"></script>
+		<script src="d3.v3.min.js"></script>
+		<script type="text/javascript" src="d3.tip.v0.6.3.js"></script>
+		
+	</head>
+	<body>
+
+		<div class="container-fluid" >
+			<ul class="nav nav-tabs" >
+				<li class="active"><a href="#tab1" data-toggle="tab" onclick>population by country</a></li>
+				<li ><a href="#tab2" data-toggle="tab">GDP by country</a></li>
+				<li ><a href="#tab3" data-toggle="tab">Purchasing Power by country</a></li>
+				<li ><a href="#tab4" data-toggle="tab"> growth in population and Purchasing power</a></li>
+				<li ><a href="#tab5" data-toggle="tab">Aggregate Population</a></li>
+				<li ><a href="#tab6" data-toggle="tab">Aggregate GDP</a></li>
+			</ul>
+			<div class="tab-content" style="padding-top:20px;">
+				<div id="tab1" class="tab-pane fade in active">
+					<acontent></acontent>
+				</div>
+				<div id="tab2" class="tab-pane">
+						<bcontent></bcontent>
+	            </div>
+				<div class="tab-pane" id="tab3">
+					<ccontent></ccontent>
+				</div>
+				<div class="tab-pane" id="tab4">
+					<dcontent></dcontent>
+				</div>
+				<div class="tab-pane" id="tab5">
+					<econtent></econtent>
+				</div>
+				<div class="tab-pane" id="tab6">
+					<fcontent></fcontent>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="graph_scripts/Population_vs_country.js"></script>
+		<script type="text/javascript" src="graph_scripts/GDP_vs_country.js"></script>
+		<script type="text/javascript" src="graph_scripts/PurchasingPower_vs_country.js"></script>
+		<script type="text/javascript" src="graph_scripts/population_and_PP_growth.js"></script>
+		<script type="text/javascript" src="graph_scripts/Aggregate_Population.js"></script>
+		<script type="text/javascript" src="graph_scripts/Aggregate_GDP.js"></script>
+		<script type="text/javascript">
+			$('document').ready(function () {
+				// body...
+				A(); B(); C();
+				 D(); E(); F();		
+			});
+		</script>
+	</body>
+</html>
